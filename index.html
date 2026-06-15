@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나만의 미슐랭 — 개인정보처리방침</title>
+  <meta name="description" content="나만의 미슐랭 앱·웹의 개인정보처리방침" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; line-height: 1.7; color: #1a1a1a; background: #fafaf7; }
+    .container { max-width: 800px; margin: 0 auto; padding: 48px 20px 80px; }
+    h1 { font-size: 28px; margin-bottom: 8px; color: #8a6a2e; }
+    h2 { font-size: 19px; margin-top: 36px; margin-bottom: 12px; color: #1a1a1a; border-bottom: 2px solid #c8a96a; padding-bottom: 6px; }
+    h3 { font-size: 15px; margin-top: 20px; margin-bottom: 8px; color: #333; }
+    p, li { font-size: 15px; margin-bottom: 8px; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    .date { color: #666; font-size: 14px; margin-bottom: 28px; }
+    .intro { margin-bottom: 16px; }
+    .contact { background: #fff5e0; padding: 16px 20px; border-radius: 8px; margin-top: 8px; border: 1px solid #e8d5a8; }
+    .contact a { color: #8a6a2e; }
+    strong { color: #1a1a1a; }
+    .section-note { font-weight: 600; margin-top: 18px; margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>개인정보처리방침</h1>
+    <p class="date">시행일: 2026년 6월 15일</p>
+
+    <p class="intro">
+      나만의 미슐랭(이하 "서비스")은 이용자의 개인정보를 소중히 다루며,
+      관련 법령을 준수합니다. 본 방침은 서비스가 수집하는 정보의 종류,
+      이용 목적, 보관 기간, 제3자 제공, 이용자의 권리를 설명합니다.
+    </p>
+
+    <h2>1. 수집하는 개인정보</h2>
+    <p>서비스는 다음 정보를 수집합니다.</p>
+    <ul>
+      <li><strong>계정 정보</strong>: Google 또는 Kakao OAuth 로그인 시 제공되는 이메일, 이름(닉네임), 프로필 이미지. 사용자가 별도 설정하는 사용자명·자기소개·아바타.</li>
+      <li><strong>위치 정보</strong>: 맛집 등록 또는 방문 기록 시점의 GPS 좌표. 가게 좌표와 약 200m 이내인지를 검증하는 데 사용되며, 검증을 위해 해당 리뷰·방문 기록과 함께 저장됩니다. 위치 정보를 지속적으로 추적하거나 다른 목적(광고·분석 등)으로 사용하지 않습니다. 본인 외에는 공개되지 않습니다.</li>
+      <li><strong>알림 토큰 및 디바이스 정보</strong>: 모바일은 Expo Push Token, 웹은 Web Push 구독 정보(endpoint, p256dh, auth)와 User-Agent 문자열(디바이스 구분용). 알림 전송 및 토큰 갱신 목적에만 사용하며 본인 외에는 공개되지 않습니다.</li>
+      <li><strong>사용자 작성 콘텐츠</strong>: 리뷰(별점·메모), 방문 기록(날짜·메뉴·메모·사진), 댓글, 가게 메뉴·가격 정보.</li>
+      <li><strong>활동 데이터</strong>: 좋아요, 댓글, 팔로우, 페이지 조회수.</li>
+      <li><strong>입맛 데이터</strong>: 입맛 진단 설문 응답 및 리뷰 활동에서 계산된 6축 입맛 벡터. 추천 매칭에 사용.</li>
+    </ul>
+
+    <p class="section-note">공개 범위</p>
+    <p>서비스는 커뮤니티 기반이므로 다음 정보는 다른 이용자에게 공개됩니다.</p>
+    <ul>
+      <li>사용자명, 닉네임, 자기소개, 프로필 사진</li>
+      <li>입맛 진단 결과 코드(예: NCVR) 및 6축 입맛 벡터</li>
+      <li>작성한 리뷰·방문 기록(메뉴·메모·사진 포함)·댓글·등록한 가게의 메뉴·가격 정보</li>
+      <li>좋아요, 팔로잉·팔로워 관계, 가게 페이지 조회수</li>
+    </ul>
+    <p>다음 정보는 본인 외에 공개되지 않으며 RLS(Row-Level Security)로 기술적으로 분리됩니다.</p>
+    <ul>
+      <li>이메일 주소</li>
+      <li>위치 인증에 사용된 GPS 좌표</li>
+      <li>푸시 알림 토큰, User-Agent 등 디바이스 식별 정보</li>
+      <li>알림 수신 기록, API 호출 카운트, 신고 내역</li>
+      <li>내맛집 폴더 구성</li>
+    </ul>
+
+    <h2>2. 이용 목적</h2>
+    <ul>
+      <li>회원 인증 및 계정 관리</li>
+      <li>맛집 위치 인증 (등록 시 실제 방문 여부 확인)</li>
+      <li>비슷한 입맛 이용자 기반 맛집 추천</li>
+      <li>좋아요·댓글·팔로우 발생 시 푸시 알림 발송</li>
+      <li>AI 소개글 생성 (가게별 정보 자동 정리)</li>
+      <li>서비스 운영·개선 및 부정 이용 방지</li>
+    </ul>
+
+    <h2>3. 제3자 제공 및 처리 위탁</h2>
+    <p>서비스는 다음 사업자에 개인정보 처리를 위탁합니다.</p>
+    <ul>
+      <li><strong>Supabase Inc.</strong> — 데이터베이스·인증·파일 저장. 모든 수집 데이터의 저장소.</li>
+      <li><strong>Google LLC</strong> — Google OAuth 로그인.</li>
+      <li><strong>Kakao Corp.</strong> — Kakao OAuth 로그인. 이메일·프로필 제공 동의 시 해당 정보가 서비스에 전달됨.</li>
+      <li><strong>Naver Cloud Platform</strong> — 지도 표시, 가게 검색, 블로그 검색(Naver Search API), AI 소개글(Clova Studio).</li>
+      <li><strong>Expo (EXP Inc.) / Google Firebase Cloud Messaging</strong> — 모바일 푸시 알림 전송.</li>
+      <li><strong>Render Services, Inc.</strong> — 웹 서비스 호스팅.</li>
+      <li><strong>GitHub, Inc.</strong> — 본 개인정보처리방침 정적 페이지 호스팅(GitHub Pages).</li>
+    </ul>
+    <p>서비스는 위 목적 외 제3자에게 개인정보를 판매하거나 광고용으로 제공하지 않습니다.</p>
+
+    <h2>4. 보관 기간</h2>
+    <ul>
+      <li>회원 탈퇴 시까지 보관합니다.</li>
+      <li>탈퇴 시 회원 식별 정보·리뷰·활동 기록은 즉시 삭제됩니다. 단, 다른 이용자가 작성한 콘텐츠 안에서 인용되거나 통계로 집계된 비식별 데이터는 남을 수 있습니다.</li>
+      <li>관련 법령에 따라 일정 기간 보관이 필요한 경우 해당 기간 동안만 제한된 목적으로 보관 후 파기합니다.</li>
+    </ul>
+
+    <h2>5. 이용자의 권리</h2>
+    <p>이용자는 다음 권리를 행사할 수 있습니다.</p>
+    <ul>
+      <li>개인정보 열람 — 프로필·작성 콘텐츠 페이지에서 직접 확인</li>
+      <li>정정·수정 — 프로필 편집, 리뷰 수정 기능</li>
+      <li>삭제·처리정지 — 리뷰 삭제, 회원 탈퇴</li>
+      <li>알림 수신 거부 — 푸시 알림 설정에서 해제</li>
+    </ul>
+    <p>위 권리는 앱·웹 화면에서 직접 행사할 수 있으며, 행사가 어렵거나 추가 요청 사항이 있는 경우 아래 연락처로 문의해 주세요.</p>
+
+    <h2>6. 안전성 확보 조치</h2>
+    <ul>
+      <li>전송 구간 HTTPS 암호화</li>
+      <li>비밀번호는 OAuth에 위임(서비스가 직접 저장하지 않음)</li>
+      <li>데이터베이스 접근 권한 최소화 및 Row-Level Security 적용</li>
+      <li>관리자 작업 감사 로그 보관</li>
+    </ul>
+
+    <h2>7. 만 14세 미만 아동</h2>
+    <p>서비스는 만 14세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다. OAuth 제공자(Google·Kakao)의 연령 정책을 따릅니다.</p>
+
+    <h2>8. 변경 고지</h2>
+    <p>본 방침이 변경되는 경우 변경 내용과 시행일을 본 페이지에 게시하여 최소 7일 전에 안내합니다. 중요한 변경 사항은 앱 내 공지 또는 푸시 알림으로 별도 고지합니다.</p>
+
+    <h2>9. 연락처</h2>
+    <p>개인정보 관련 문의·요청은 아래로 보내주세요.</p>
+    <div class="contact">
+      <p><strong>서비스명:</strong> 나만의 미슐랭 (My Michelin)</p>
+      <p><strong>개발자:</strong> Kim Sunghun</p>
+      <p><strong>이메일:</strong> <a href="mailto:kim090488@gmail.com">kim090488@gmail.com</a></p>
+    </div>
+  </div>
+</body>
+</html>
